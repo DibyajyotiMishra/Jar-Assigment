@@ -114,7 +114,6 @@
 				2AC435F195CCAC0A8FA9E0B2 /* Pods-InfiniteMovies-InfiniteMoviesTests.debug.xcconfig */,
 				04669D4759ABE0DB38EBA75B /* Pods-InfiniteMovies-InfiniteMoviesTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
