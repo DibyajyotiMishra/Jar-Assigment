@@ -25,7 +25,7 @@ const movieReducer = (state = INITIAL_STATE, action: any) => {
     case MovieActionTypes.LOAD_MORE_MOVIES:
       return {
         ...state,
-        movies: [...state.movies, ...action.payload.list],
+        movies: [...state.movies, ...action.payload.movies],
         page: action.payload.page,
       };
     case MovieActionTypes.MOVIE_TYPE:
