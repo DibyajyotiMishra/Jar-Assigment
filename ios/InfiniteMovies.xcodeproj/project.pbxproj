@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* InfiniteMoviesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* InfiniteMoviesTests.m */; };
+		134FB3AF33A24AF13AA5FD65 /* libPods-InfiniteMovies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A11184899ED4C24628A231C8 /* libPods-InfiniteMovies.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		1DFB5321F69E931BCC65F404 /* libPods-InfiniteMovies.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A292C5DB621F663088692357 /* libPods-InfiniteMovies.a */; };
+		18FE7F375223F1E0781B27ED /* libPods-InfiniteMovies-InfiniteMoviesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C234219409AAE5BA5BE727B /* libPods-InfiniteMovies-InfiniteMoviesTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		C42D872785A67286A418ED06 /* libPods-InfiniteMovies-InfiniteMoviesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FBB639C715EC1C70BA509A8 /* libPods-InfiniteMovies-InfiniteMoviesTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,20 +30,36 @@
 		00E356EE1AD99517003FC87E /* InfiniteMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InfiniteMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* InfiniteMoviesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfiniteMoviesTests.m; sourceTree = "<group>"; };
-		04669D4759ABE0DB38EBA75B /* Pods-InfiniteMovies-InfiniteMoviesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteMovies-InfiniteMoviesTests.release.xcconfig"; path = "Target Support Files/Pods-InfiniteMovies-InfiniteMoviesTests/Pods-InfiniteMovies-InfiniteMoviesTests.release.xcconfig"; sourceTree = "<group>"; };
+		1225EA0984CA4480B2F5FCF7 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* InfiniteMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfiniteMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = InfiniteMovies/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = InfiniteMovies/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = InfiniteMovies/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = InfiniteMovies/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = InfiniteMovies/main.m; sourceTree = "<group>"; };
-		28FD018AA6CE0BC51CFB6303 /* Pods-InfiniteMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteMovies.release.xcconfig"; path = "Target Support Files/Pods-InfiniteMovies/Pods-InfiniteMovies.release.xcconfig"; sourceTree = "<group>"; };
-		2AC435F195CCAC0A8FA9E0B2 /* Pods-InfiniteMovies-InfiniteMoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteMovies-InfiniteMoviesTests.debug.xcconfig"; path = "Target Support Files/Pods-InfiniteMovies-InfiniteMoviesTests/Pods-InfiniteMovies-InfiniteMoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		70DD2D01EA895D96BB36CBC5 /* Pods-InfiniteMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteMovies.debug.xcconfig"; path = "Target Support Files/Pods-InfiniteMovies/Pods-InfiniteMovies.debug.xcconfig"; sourceTree = "<group>"; };
-		7FBB639C715EC1C70BA509A8 /* libPods-InfiniteMovies-InfiniteMoviesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InfiniteMovies-InfiniteMoviesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18242F65DE9A4B64892870C3 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		327DAB9CD73B4540A20FCB9F /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		36D4AA8ED493489CA90DEDA2 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		39B4C8385C01F2B75F4D1356 /* Pods-InfiniteMovies-InfiniteMoviesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteMovies-InfiniteMoviesTests.debug.xcconfig"; path = "Target Support Files/Pods-InfiniteMovies-InfiniteMoviesTests/Pods-InfiniteMovies-InfiniteMoviesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5395B9BB61894F2007896D1D /* Pods-InfiniteMovies-InfiniteMoviesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteMovies-InfiniteMoviesTests.release.xcconfig"; path = "Target Support Files/Pods-InfiniteMovies-InfiniteMoviesTests/Pods-InfiniteMovies-InfiniteMoviesTests.release.xcconfig"; sourceTree = "<group>"; };
+		58156544CA7543FAADF864CE /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		584D92D7B4AE48568BA98170 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		5C234219409AAE5BA5BE727B /* libPods-InfiniteMovies-InfiniteMoviesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InfiniteMovies-InfiniteMoviesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61E4FA742877462DA5AED509 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		65C892DE045D4265B16D32ED /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = InfiniteMovies/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A292C5DB621F663088692357 /* libPods-InfiniteMovies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InfiniteMovies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8326CA5F546341168CD81A20 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		8CF9EBBA4A4C9818D2084B20 /* Pods-InfiniteMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteMovies.debug.xcconfig"; path = "Target Support Files/Pods-InfiniteMovies/Pods-InfiniteMovies.debug.xcconfig"; sourceTree = "<group>"; };
+		903C9D852A3047BDAAC8DE91 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		9B00BCDAC5F043DDB49BC0EF /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		A11184899ED4C24628A231C8 /* libPods-InfiniteMovies.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-InfiniteMovies.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4F97349544840139887CE6C /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		BF85CB3B8D4F498F897C4A3C /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		C01876DC8A01928E33FFD1F8 /* Pods-InfiniteMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfiniteMovies.release.xcconfig"; path = "Target Support Files/Pods-InfiniteMovies/Pods-InfiniteMovies.release.xcconfig"; sourceTree = "<group>"; };
+		C85F29F7DCF141A4B1122CD6 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F5745BDBF147464889CA5FF5 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		FD5293DEF2E247D1A675CB84 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C42D872785A67286A418ED06 /* libPods-InfiniteMovies-InfiniteMoviesTests.a in Frameworks */,
+				18FE7F375223F1E0781B27ED /* libPods-InfiniteMovies-InfiniteMoviesTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1DFB5321F69E931BCC65F404 /* libPods-InfiniteMovies.a in Frameworks */,
+				134FB3AF33A24AF13AA5FD65 /* libPods-InfiniteMovies.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,12 +112,35 @@
 			name = InfiniteMovies;
 			sourceTree = "<group>";
 		};
+		2B9A348CF02147149258E8F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				58156544CA7543FAADF864CE /* AntDesign.ttf */,
+				584D92D7B4AE48568BA98170 /* Entypo.ttf */,
+				9B00BCDAC5F043DDB49BC0EF /* EvilIcons.ttf */,
+				8326CA5F546341168CD81A20 /* Feather.ttf */,
+				BF85CB3B8D4F498F897C4A3C /* FontAwesome.ttf */,
+				36D4AA8ED493489CA90DEDA2 /* FontAwesome5_Brands.ttf */,
+				903C9D852A3047BDAAC8DE91 /* FontAwesome5_Regular.ttf */,
+				F5745BDBF147464889CA5FF5 /* FontAwesome5_Solid.ttf */,
+				C85F29F7DCF141A4B1122CD6 /* Fontisto.ttf */,
+				65C892DE045D4265B16D32ED /* Foundation.ttf */,
+				FD5293DEF2E247D1A675CB84 /* Ionicons.ttf */,
+				18242F65DE9A4B64892870C3 /* MaterialCommunityIcons.ttf */,
+				61E4FA742877462DA5AED509 /* MaterialIcons.ttf */,
+				327DAB9CD73B4540A20FCB9F /* Octicons.ttf */,
+				1225EA0984CA4480B2F5FCF7 /* SimpleLineIcons.ttf */,
+				B4F97349544840139887CE6C /* Zocial.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				A292C5DB621F663088692357 /* libPods-InfiniteMovies.a */,
-				7FBB639C715EC1C70BA509A8 /* libPods-InfiniteMovies-InfiniteMoviesTests.a */,
+				A11184899ED4C24628A231C8 /* libPods-InfiniteMovies.a */,
+				5C234219409AAE5BA5BE727B /* libPods-InfiniteMovies-InfiniteMoviesTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,10 +148,10 @@
 		630C45438632F73D3E62D852 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				70DD2D01EA895D96BB36CBC5 /* Pods-InfiniteMovies.debug.xcconfig */,
-				28FD018AA6CE0BC51CFB6303 /* Pods-InfiniteMovies.release.xcconfig */,
-				2AC435F195CCAC0A8FA9E0B2 /* Pods-InfiniteMovies-InfiniteMoviesTests.debug.xcconfig */,
-				04669D4759ABE0DB38EBA75B /* Pods-InfiniteMovies-InfiniteMoviesTests.release.xcconfig */,
+				8CF9EBBA4A4C9818D2084B20 /* Pods-InfiniteMovies.debug.xcconfig */,
+				C01876DC8A01928E33FFD1F8 /* Pods-InfiniteMovies.release.xcconfig */,
+				39B4C8385C01F2B75F4D1356 /* Pods-InfiniteMovies-InfiniteMoviesTests.debug.xcconfig */,
+				5395B9BB61894F2007896D1D /* Pods-InfiniteMovies-InfiniteMoviesTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -133,6 +172,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				630C45438632F73D3E62D852 /* Pods */,
+				2B9A348CF02147149258E8F3 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -155,12 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "InfiniteMoviesTests" */;
 			buildPhases = (
-				920F8806ECF0003387254266 /* [CP] Check Pods Manifest.lock */,
+				0D3E248B7257CDB09C3F26D9 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				1676D772408FD601EF991C8E /* [CP] Embed Pods Frameworks */,
-				8966A566BCB1C6A5C39D1149 /* [CP] Copy Pods Resources */,
+				85B157E420F4D5867F123245 /* [CP] Embed Pods Frameworks */,
+				DB0FCEFEA1FE6D874FA03E5C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,14 +216,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "InfiniteMovies" */;
 			buildPhases = (
-				FD0002ACAA991F65761970C4 /* [CP] Check Pods Manifest.lock */,
+				799197BFBA23EC07F47E4B8D /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				B3213050C9AE55599BC7761C /* [CP] Embed Pods Frameworks */,
-				EF77A15DAB11E64675B29A6D /* [CP] Copy Pods Resources */,
+				1908AEAFD072B009DF8BD479 /* [CP] Embed Pods Frameworks */,
+				8FC1567F9F090680AE51B9C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,41 +304,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		1676D772408FD601EF991C8E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies-InfiniteMoviesTests/Pods-InfiniteMovies-InfiniteMoviesTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies-InfiniteMoviesTests/Pods-InfiniteMovies-InfiniteMoviesTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies-InfiniteMoviesTests/Pods-InfiniteMovies-InfiniteMoviesTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8966A566BCB1C6A5C39D1149 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies-InfiniteMoviesTests/Pods-InfiniteMovies-InfiniteMoviesTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies-InfiniteMoviesTests/Pods-InfiniteMovies-InfiniteMoviesTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies-InfiniteMoviesTests/Pods-InfiniteMovies-InfiniteMoviesTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		920F8806ECF0003387254266 /* [CP] Check Pods Manifest.lock */ = {
+		0D3E248B7257CDB09C3F26D9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,7 +326,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B3213050C9AE55599BC7761C /* [CP] Embed Pods Frameworks */ = {
+		1908AEAFD072B009DF8BD479 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -337,24 +343,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies/Pods-InfiniteMovies-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EF77A15DAB11E64675B29A6D /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies/Pods-InfiniteMovies-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies/Pods-InfiniteMovies-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies/Pods-InfiniteMovies-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FD0002ACAA991F65761970C4 /* [CP] Check Pods Manifest.lock */ = {
+		799197BFBA23EC07F47E4B8D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -374,6 +363,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85B157E420F4D5867F123245 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies-InfiniteMoviesTests/Pods-InfiniteMovies-InfiniteMoviesTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies-InfiniteMoviesTests/Pods-InfiniteMovies-InfiniteMoviesTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies-InfiniteMoviesTests/Pods-InfiniteMovies-InfiniteMoviesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8FC1567F9F090680AE51B9C3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies/Pods-InfiniteMovies-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies/Pods-InfiniteMovies-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies/Pods-InfiniteMovies-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB0FCEFEA1FE6D874FA03E5C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies-InfiniteMoviesTests/Pods-InfiniteMovies-InfiniteMoviesTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies-InfiniteMoviesTests/Pods-InfiniteMovies-InfiniteMoviesTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InfiniteMovies-InfiniteMoviesTests/Pods-InfiniteMovies-InfiniteMoviesTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -428,7 +468,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AC435F195CCAC0A8FA9E0B2 /* Pods-InfiniteMovies-InfiniteMoviesTests.debug.xcconfig */;
+			baseConfigurationReference = 39B4C8385C01F2B75F4D1356 /* Pods-InfiniteMovies-InfiniteMoviesTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -455,7 +495,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04669D4759ABE0DB38EBA75B /* Pods-InfiniteMovies-InfiniteMoviesTests.release.xcconfig */;
+			baseConfigurationReference = 5395B9BB61894F2007896D1D /* Pods-InfiniteMovies-InfiniteMoviesTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -479,7 +519,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 70DD2D01EA895D96BB36CBC5 /* Pods-InfiniteMovies.debug.xcconfig */;
+			baseConfigurationReference = 8CF9EBBA4A4C9818D2084B20 /* Pods-InfiniteMovies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -505,7 +545,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28FD018AA6CE0BC51CFB6303 /* Pods-InfiniteMovies.release.xcconfig */;
+			baseConfigurationReference = C01876DC8A01928E33FFD1F8 /* Pods-InfiniteMovies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
