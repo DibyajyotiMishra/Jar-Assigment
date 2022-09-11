@@ -283,8 +283,6 @@ PODS:
     - glog
   - react-native-safe-area-context (3.3.2):
     - React-Core
-  - react-native-splash-screen (3.3.0):
-    - React-Core
   - React-perflogger (0.67.1)
   - React-RCTActionSheet (0.67.1):
     - React-Core/RCTActionSheetHeaders (= 0.67.1)
@@ -358,8 +356,6 @@ PODS:
     - React-Core
     - SDWebImage (~> 5.11.1)
     - SDWebImageWebPCoder (~> 0.8.4)
-  - RNFlashList (1.2.2):
-    - React-Core
   - RNScreens (3.11.1):
     - React-Core
     - React-RCTImage
@@ -418,7 +414,6 @@ DEPENDENCIES:
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
-  - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
   - React-perflogger (from `../node_modules/react-native/ReactCommon/reactperflogger`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
@@ -434,7 +429,6 @@ DEPENDENCIES:
   - "RNCMaskedView (from `../node_modules/@react-native-community/masked-view`)"
   - "RNCPicker (from `../node_modules/@react-native-picker/picker`)"
   - RNFastImage (from `../node_modules/react-native-fast-image`)
-  - "RNFlashList (from `../node_modules/@shopify/flash-list`)"
   - RNScreens (from `../node_modules/react-native-screens`)
   - RNVectorIcons (from `../node_modules/react-native-vector-icons`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
@@ -496,8 +490,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/logger"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
-  react-native-splash-screen:
-    :path: "../node_modules/react-native-splash-screen"
   React-perflogger:
     :path: "../node_modules/react-native/ReactCommon/reactperflogger"
   React-RCTActionSheet:
@@ -528,8 +520,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/@react-native-picker/picker"
   RNFastImage:
     :path: "../node_modules/react-native-fast-image"
-  RNFlashList:
-    :path: "../node_modules/@shopify/flash-list"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   RNVectorIcons:
@@ -570,7 +560,6 @@ SPEC CHECKSUMS:
   React-jsinspector: ab80bcdb02f28cdfc0dbbaea6db1241565d59002
   React-logger: b08f354e4c928ff794ca477347fea0922aaf11c3
   react-native-safe-area-context: 584dc04881deb49474363f3be89e4ca0e854c057
-  react-native-splash-screen: 4312f786b13a81b5169ef346d76d33bc0c6dc457
   React-perflogger: 9a6172711d9c4c8c7ac0a426717317c3c6ecf85c
   React-RCTActionSheet: ed408b54b08278e6af8a75e08679675041da61ae
   React-RCTAnimation: 0163b497a423a9576a776685c6e3fe276f934758
@@ -586,7 +575,6 @@ SPEC CHECKSUMS:
   RNCMaskedView: 0e1bc4bfa8365eba5fbbb71e07fbdc0555249489
   RNCPicker: 0b65be85fe7954fbb2062ef079e3d1cde252d888
   RNFastImage: 1f2cab428712a4baaf78d6169eaec7f622556dd7
-  RNFlashList: 13d14d9502661134ad3ba892f81d76bdcbd79755
   RNScreens: 4d83613b50b74ed277026375dc0810893b0c347f
   RNVectorIcons: 7923e585eaeb139b9f4531d25a125a1500162a0b
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
@@ -594,6 +582,6 @@ SPEC CHECKSUMS:
   Yoga: 5cbf25add73edb290e1067017690f7ebf56c5468
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 2c1db236bc118569d8014d202b497daac623f33b
+PODFILE CHECKSUM: 49eb8d0e41ed4a56d6080c189c20059136f8e4cf
 
 COCOAPODS: 1.11.2

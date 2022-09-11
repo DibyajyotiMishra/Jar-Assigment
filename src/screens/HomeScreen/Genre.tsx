@@ -35,8 +35,6 @@ const Genre = ({
   }
 
   function renderCards(item: any, idx: number) {
-    // console.log(item);
-
     return (
       <Pressable onPress={() => onPress(item)} key={idx}>
         <Banner type="xl" styles={genreStyles.card}>

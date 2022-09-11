@@ -3,7 +3,6 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 // @ts-ignore
 import SplashScreen from 'react-native-animated-splash-screen';
-import StartSplashScreen from 'react-native-splash-screen';
 import Home from './screens/HomeScreen';
 
 const NavigationStack = createNativeStackNavigator();
@@ -29,10 +28,6 @@ const RootNavigator: FC = () => {
       setIsLoaded(true);
     }, 1500);
   }, [isLoaded]);
-
-  useEffect(() => {
-    StartSplashScreen.hide();
-  }, []);
 
   return (
     <SplashScreen
