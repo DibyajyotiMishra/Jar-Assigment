@@ -32,3 +32,5 @@
           - type: 'sm' | 'md' | 'lg' | 'xl' | 'dynamic' (Sizes)
           - styles?: object (Custom Styles)
 
+ **Demo Video:**
+ [https://drive.google.com/file/d/18ft2Qg47_3ZQcbdRM9_Nq-ZIU2PSo8NM/view?usp=sharing](https://drive.google.com/file/d/18ft2Qg47_3ZQcbdRM9_Nq-ZIU2PSo8NM/view?usp=sharing)
