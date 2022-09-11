@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+/* eslint-disable react-native/no-inline-styles */
 import React, {useState} from 'react';
 import {
   Pressable,
@@ -13,7 +15,7 @@ import GENRE from './genreTypes';
 import {COLORS, heightToDp, widthToDp} from '../../constants';
 import {Button, Text} from '../../components';
 
-const Filters = ({sheetRef}: any) => {
+const Filters = ({sheetRef, onFiltersChange}: any) => {
   const [isAdult, setIsAdult] = useState(false);
   const [genre, setGenre] = useState(0);
   function handlePress() {
@@ -24,6 +26,9 @@ const Filters = ({sheetRef}: any) => {
   }
   function setMovieGenre(value: number) {
     setGenre(value);
+  }
+  function setFilters() {
+    onFiltersChange([isAdult, genre]);
   }
 
   return (
@@ -64,7 +69,7 @@ const Filters = ({sheetRef}: any) => {
               itemStyle={{color: '#fff', fontSize: 14}}
               style={styles.pickerStyles}>
               <Picker.Item label="Choose Genre" key="#" />
-              {GENRE.map(genre => (
+              {GENRE.map((genre: any) => (
                 <Picker.Item
                   label={genre.name}
                   value={genre.id}
@@ -76,7 +81,7 @@ const Filters = ({sheetRef}: any) => {
           <Button
             style={{bottom: heightToDp('14%')}}
             buttonText={'Save'}
-            onPress={() => console.log('saved')}
+            onPress={setFilters}
           />
         </ScrollView>
       </SafeAreaView>

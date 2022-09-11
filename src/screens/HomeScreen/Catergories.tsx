@@ -1,22 +1,25 @@
+/* eslint-disable no-shadow */
 /* eslint-disable react-native/no-inline-styles */
 
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Pressable, View} from 'react-native';
+import {connect} from 'react-redux';
 import {Banner, Text} from '../../components';
+import {fetchMovies, setMovieType} from '../../redux/actions/action';
 import styles from './styles';
 
-const GENRES = [
+export const GENRES = [
   {
     id: 1,
     type: 'Trending',
     icon: '🤩',
-    requestType: 'trending',
+    requestType: 'popular',
   },
   {
     id: 2,
     type: 'Latest',
     icon: '🫣',
-    requestType: 'latest',
+    requestType: 'now_playing',
   },
   {
     id: 3,
@@ -32,9 +35,17 @@ const GENRES = [
   },
 ];
 
-const Categories = () => {
-  function handlePress(genre: {type: any}) {
-    console.log(genre.type);
+const Categories = ({setMovieType, fetchMovies}: any) => {
+  const [type, setType] = useState<string>('popular');
+  const [page] = useState<number>(1);
+
+  useEffect(() => {
+    fetchMovies(type, page);
+  }, [type, page, fetchMovies]);
+
+  function handlePress(genre: any) {
+    setType(genre.requestType);
+    setMovieType(genre.requestType);
   }
   return (
     <>
@@ -62,4 +73,14 @@ const Categories = () => {
   );
 };
 
-export default Categories;
+const mapStateToProps = (store: any) => ({
+  movieList: store.movies.movies,
+});
+
+const mapDispatchToProps = (dispatch: any) => ({
+  setMovieType: (type: string) => dispatch(setMovieType(type)),
+  fetchMovies: (type: string, page: number) =>
+    dispatch(fetchMovies(page, type)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Categories);
