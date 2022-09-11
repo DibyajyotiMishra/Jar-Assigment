@@ -7,16 +7,25 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
+import {connect} from 'react-redux';
 import RBSheet from 'react-native-raw-bottom-sheet';
 import FastImage from 'react-native-fast-image';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import {COLORS, heightToDp, widthToDp} from '../../constants';
 import {Banner, Text} from '../../components';
+import config from '../../config';
+import genreTypes from './genreTypes';
 
-const Details = ({sheetRef}: any) => {
+const Details = ({sheetRef, movie}: any) => {
   function handlePress() {
     sheetRef.current.close();
   }
+
+  const genres = genreTypes.filter(genre => {
+    return movie?.genre_ids?.some((gid: number) => gid === genre.id);
+  });
+
+  console.log(genres);
 
   return (
     <RBSheet
@@ -41,7 +50,7 @@ const Details = ({sheetRef}: any) => {
               <View style={styles.imageContainer}>
                 <FastImage
                   source={{
-                    uri: 'https://cdn.pixabay.com/photo/2022/09/07/10/01/landscape-7438429__340.jpg',
+                    uri: `${config.IMAGE_URL}${movie?.poster_path}`,
                     priority: FastImage.priority.high,
                   }}
                   resizeMode={FastImage.resizeMode.cover}
@@ -50,24 +59,38 @@ const Details = ({sheetRef}: any) => {
               </View>
             </Banner>
             <View style={styles.header}>
-              <Text type="subTitle" content="Movie Name" />
+              <Text type="subTitle" content={movie?.title} />
               <View style={styles.subHeading}>
-                <Text type="small" content="Released on: 1972-03-14 |" />
+                <Text
+                  type="small"
+                  content={`Released on: ${movie?.release_date} |`}
+                />
                 <View style={styles.rating}>
-                  <Text type="small" content="4.5" />
+                  <Text
+                    type="small"
+                    content={(movie?.vote_average / 2).toString()}
+                  />
                   <Icon name="star" color="yellow" size={16} />
                 </View>
               </View>
             </View>
-            <View style={styles.tags}>
-              <Text type="small" content="crime" styles={{fontWeight: '400'}} />
+            <View style={{flexDirection: 'row'}}>
+              {genres.map(genre => (
+                <View style={styles.tags} key={genre.id}>
+                  <Text
+                    type="small"
+                    content={genre.name}
+                    styles={{fontWeight: '400'}}
+                  />
+                </View>
+              ))}
             </View>
             <View style={styles.overview}>
               <Text type="body" content="Overview" />
               <Text
                 type="small"
                 styles={{marginTop: heightToDp('1.5%')}}
-                content="Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge."
+                content={movie?.overview}
               />
             </View>
           </View>
@@ -77,7 +100,12 @@ const Details = ({sheetRef}: any) => {
   );
 };
 
-export default Details;
+const mapStateToProps = (store: any) => ({
+  movieType: store.movies.movieType,
+  movie: store.movies.currentMovie,
+});
+
+export default connect(mapStateToProps)(Details);
 
 const styles = StyleSheet.create({
   sheetCloseStyle: {
@@ -111,6 +139,7 @@ const styles = StyleSheet.create({
   header: {
     marginTop: heightToDp('3%'),
     marginLeft: widthToDp('3%'),
+    marginRight: widthToDp('9%'),
   },
   subHeading: {
     flexDirection: 'row',
@@ -122,7 +151,7 @@ const styles = StyleSheet.create({
   tags: {
     marginTop: heightToDp('1%'),
     marginLeft: widthToDp('3%'),
-    width: widthToDp('15%'),
+    width: widthToDp('20%'),
     height: 20,
     borderRadius: 50,
     backgroundColor: '#454B6B',

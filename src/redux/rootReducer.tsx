@@ -1,12 +1,8 @@
 import {combineReducers} from 'redux';
+import movieReducer from './reducers';
 
-const tempReducer = () => {
-  return {
-    name: 'John',
-    age: 30,
-  };
-};
-
-export default combineReducers({
-  temp: tempReducer,
+const rootReducers = combineReducers<any>({
+  movies: movieReducer,
 });
+
+export default rootReducers;

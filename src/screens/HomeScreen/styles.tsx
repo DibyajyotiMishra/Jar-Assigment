@@ -9,6 +9,9 @@ interface Styles {
   buttons: ViewStyle;
   bannerStyles: ViewStyle;
   scrollViewContents: ViewStyle;
+  inputContainer: ViewStyle;
+  input: ViewStyle;
+  activityIndicator: ViewStyle;
 }
 
 const styles = StyleSheet.create<Styles>({
@@ -49,6 +52,31 @@ const styles = StyleSheet.create<Styles>({
   scrollViewContents: {
     marginTop: 10,
     height: '100%',
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    top: heightToDp('5%'),
+    right: widthToDp('5%'),
+    left: widthToDp('1%'),
+    borderWidth: 1,
+    borderColor: COLORS.secondary,
+    borderRadius: 50,
+    width: widthToDp('85%'),
+    height: 50,
+    padding: 15,
+  },
+  input: {
+    flex: 1,
+    paddingLeft: 5,
+    color: '#E9E9E9',
+    fontSize: 16,
+  },
+  activityIndicator: {
+    flex: 1,
+    marginTop: heightToDp('30%'),
+    marginRight: widthToDp('15%'),
   },
 });
 

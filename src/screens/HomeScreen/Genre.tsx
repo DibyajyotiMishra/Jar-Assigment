@@ -1,42 +1,46 @@
-import React, {useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {View, Pressable, StyleSheet, ScrollView} from 'react-native';
+import {connect} from 'react-redux';
 import FastImage from 'react-native-fast-image';
 import {Banner, Button, Text} from '../../components';
 import {deviceWidth, heightToDp} from '../../constants';
 import Details from './Details';
 import Filters from './Filters';
 import styles from './styles';
+import config from '../../config';
+import {setCurrentMovie} from '../../redux/actions/action';
 
-const DATA = [
-  {
-    title: 'First Item',
-  },
-  {
-    title: 'Second Item',
-  },
-  {
-    title: 'Third Item',
-  },
-  {
-    title: 'Fourth Item',
-  },
-];
-
-const Genre = () => {
+const Movies: any = {
+  popular: 'Trending',
+  now_playing: 'Latest',
+  top_rated: 'Most Popular',
+  upcoming: 'Upcoming',
+};
+const Genre = ({movieType, movieList, setCurrentMovie}: any) => {
+  const [filters, setFilters] = useState([]);
+  const [movies, setMovies] = useState(movieList);
+  // const [currentMovieId, setCurrentMovieId] = useState(null);
   const filtersRef = useRef<any>();
   const detailsRef = useRef<any>();
-  let pageNumber = 1;
-  function onPress() {
+  function onPress(movie: any) {
+    setCurrentMovie(movie);
     detailsRef.current.open();
   }
+
+  // useEffect(() => {
+  //   setCurrentMovieId(movieList[0]);
+  // }, []);
+
   function renderCards(item: any) {
+    // console.log(item);
+
     return (
-      <Pressable onPress={onPress} key={item.title}>
+      <Pressable onPress={() => onPress(item)} key={item.title}>
         <Banner type="xl" styles={genreStyles.card}>
           <View style={genreStyles.cardContainer}>
             <FastImage
               source={{
-                uri: 'https://cdn.pixabay.com/photo/2022/09/07/10/01/landscape-7438429__340.jpg',
+                uri: `${config.IMAGE_URL}${item.poster_path}`,
                 priority: FastImage.priority.high,
               }}
               resizeMode={FastImage.resizeMode.cover}
@@ -57,14 +61,33 @@ const Genre = () => {
   }
 
   function filtersButtonClick() {
-    console.log('filters click');
     filtersRef.current.open();
   }
+
+  function onFiltersChange(changedFilters: any) {
+    setFilters(changedFilters);
+  }
+
+  useEffect(() => {
+    if (filters.length > 0 && filters[1] !== null && filters[1] !== 0) {
+      const newList = movieList.filter(
+        (movie: any) =>
+          movie.adult === filters[0] && movie?.genre_ids?.includes(filters[1]),
+      );
+      console.log(newList.length);
+
+      setMovies(newList);
+    } else {
+      setMovies(movieList);
+    }
+  }, [filters, movieList]);
+
+  console.log(filters);
 
   return (
     <>
       <View style={[styles.categoriesSection, {top: heightToDp('12%')}]}>
-        <Text content="Romance" type="body" />
+        <Text content={Movies[movieType]} type="body" />
         <Pressable
           onPress={filtersButtonClick}
           style={{top: heightToDp('0.75%')}}>
@@ -73,21 +96,32 @@ const Genre = () => {
       </View>
       <View style={genreStyles.flashListParentView}>
         <ScrollView contentContainerStyle={genreStyles.listViewStyle}>
-          {DATA.map(item => renderCards(item))}
+          {movies?.map((item: any) => renderCards(item))}
+          {/* {'\n'} */}
           <Button
-            buttonText={`Load Page ${pageNumber + 1}`}
-            onPress={onPress}
-            style={{left: deviceWidth / 6.5, marginTop: heightToDp('12%')}}
+            buttonText="Load Page"
+            onPress={() => console.log('wow')}
+            style={{left: deviceWidth / 6.5, marginTop: heightToDp('17%')}}
           />
         </ScrollView>
-        <Filters sheetRef={filtersRef} />
+
+        <Filters sheetRef={filtersRef} onFiltersChange={onFiltersChange} />
         <Details sheetRef={detailsRef} />
       </View>
     </>
   );
 };
 
-export default Genre;
+const mapStateToProps = (store: any) => ({
+  movieType: store.movies.movieType,
+  movieList: store.movies.movies,
+});
+
+const mapDispatchToProps = (dispatch: any) => ({
+  setCurrentMovie: (movie: any) => dispatch(setCurrentMovie(movie)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Genre);
 
 const genreStyles = StyleSheet.create({
   flashListParentView: {
