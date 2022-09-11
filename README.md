@@ -15,6 +15,8 @@
   * Axios (HTTP Client)
   * react Navigation for Navigation
 
+  **API Docs:**: [here](https://developers.themoviedb.org/3)
+
   **Reusable Components:**
   * Text [Custom Text Component]:
     Params:
